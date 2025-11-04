@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Tambahkan di App.css */
+@media (max-width: 768px) {
+    .thin-scrollbar::-webkit-scrollbar {
+      width: 4px;
+    }
+    
+    .thin-scrollbar::-webkit-scrollbar-thumb {
+      background-color: rgba(0, 0, 0, 0.1);
+      border-radius: 4px;
+    }
+    
+    .thin-scrollbar::-webkit-scrollbar-track {
+      background-color: transparent;
+    }
+  }
+  
+  /* Animasi untuk blink cursor */
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  
+  .animate-blink {
+    animation: blink 1s step-end infinite;
+  }
+
+/* Tambahkan di file CSS utama Anda */
+.prose {
+  max-width: 100%;
+  line-height: 1.5;
+}
+
+.prose strong {
+  font-weight: 600;
+  color: inherit;
+}
+
+.prose ul, .prose ol {
+  padding-left: 1.25rem;
+  margin: 0.5rem 0;
+}
+
+.prose li {
+  margin-bottom: 0.25rem;
+}
+
